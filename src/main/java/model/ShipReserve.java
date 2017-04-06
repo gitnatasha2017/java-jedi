@@ -26,7 +26,6 @@ public class ShipReserve extends SubSystem{
         if (!isDamaged() && EnergyUtils.isEnergyInRange(energyPoints)) {
             this.energyPoints = energyPoints;
         }
-        this.energyPoints = energyPoints;
     }
 
 }

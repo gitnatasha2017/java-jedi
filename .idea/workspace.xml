@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d975a67f-3a20-476b-aa0b-de7ee74b6fd7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/model/ShipReserveTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Utils/EnergyUtilsTest.java" afterPath="$PROJECT_DIR$/src/test/java/Utils/EnergyUtilsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/ShipReserve.java" afterPath="$PROJECT_DIR$/src/main/java/model/ShipReserve.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/model/ShieldTest.java" afterPath="$PROJECT_DIR$/src/test/java/model/ShieldTest.java" />
     </list>
     <list id="d672ef5e-bded-4a1d-b8d6-cc33e3e939d4" name="DoNotCommit" comment="">
@@ -64,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShipReserve.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ShipReserve.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/ShipReserve.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+            <state relative-caret-position="457">
+              <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
               <folding>
                 <element signature="e#179#180#0" expanded="true" />
                 <element signature="e#238#239#0" expanded="true" />
@@ -84,8 +85,8 @@
       <file leaf-file-name="EnergyUtilsTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Utils/EnergyUtilsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state relative-caret-position="153">
+              <caret line="61" column="0" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="61" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,11 +94,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShieldTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ShieldTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/model/ShieldTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="205">
+              <caret line="39" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShipReserveTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/model/ShipReserveTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,16 +155,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InvokeMethod.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -186,10 +189,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/model/SubSystem.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Shield.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/ShipReserve.java" />
         <option value="$PROJECT_DIR$/src/main/java/Utils/EnergyUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/Utils/EnergyUtilsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/model/ShieldTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/model/ShipReserveTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/ShipReserve.java" />
       </list>
     </option>
   </component>
@@ -260,6 +264,20 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="compiler" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="startrek" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -488,33 +506,7 @@
       <recent name="app" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EnergyUtilsTest.testTransferFromShipToShield">
-    <configuration default="false" name="EnergyUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="startrek" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Utils" />
-      <option name="MAIN_CLASS_NAME" value="Utils.EnergyUtilsTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ShipReserveTest.testSetEnergyPointsOnDamagedShield">
     <configuration default="false" name="EnergyUtilsTest.testInvalidHighTransferFromShipToShield" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -567,32 +559,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="EnergyUtilsTest.testTransferFromDamagedShipToShield" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="startrek" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Utils" />
-      <option name="MAIN_CLASS_NAME" value="Utils.EnergyUtilsTest" />
-      <option name="METHOD_NAME" value="testTransferFromDamagedShipToShield" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="EnergyUtilsTest.testTransferFromShipToShield" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -606,6 +572,58 @@
       <option name="PACKAGE_NAME" value="Utils" />
       <option name="MAIN_CLASS_NAME" value="Utils.EnergyUtilsTest" />
       <option name="METHOD_NAME" value="testTransferFromShipToShield" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ShieldTest.testSetShieldEnergy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="startrek" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.ShieldTest" />
+      <option name="METHOD_NAME" value="testSetShieldEnergy" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ShipReserveTest.testSetEnergyPointsOnDamagedShield" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="startrek" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.ShipReserveTest" />
+      <option name="METHOD_NAME" value="testSetEnergyPointsOnDamagedShield" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -846,19 +864,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest.testInvalidHighTransferFromShipToShield" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest.testInvalidLowTransferFromShipToShield" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest.testTransferFromDamagedShipToShield" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest.testTransferFromShipToShield" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest.testInvalidHighTransferFromShipToShield" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest.testInvalidLowTransferFromShipToShield" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest.testTransferFromShipToShield" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ShieldTest.testSetShieldEnergy" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ShipReserveTest.testSetEnergyPointsOnDamagedShield" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest.testTransferFromShipToShield" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest.testInvalidHighTransferFromShipToShield" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest.testInvalidLowTransferFromShipToShield" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest.testTransferFromDamagedShipToShield" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ShipReserveTest.testSetEnergyPointsOnDamagedShield" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ShieldTest.testSetShieldEnergy" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest.testTransferFromShipToShield" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest.testInvalidHighTransferFromShipToShield" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest.testInvalidLowTransferFromShipToShield" />
       </list>
     </recent_temporary>
   </component>
@@ -912,16 +930,17 @@
       <option name="project" value="LOCAL" />
       <updated>1491499278962</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added more tests">
+      <created>1491500247513</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1491500247513</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EnergyUtilsTest - 2017.04.06 at 10h 15m 05s.xml">
-      <configuration name="EnergyUtilsTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EnergyUtilsTest - 2017.04.06 at 10h 16m 31s.xml">
-      <configuration name="EnergyUtilsTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="EnergyUtilsTest - 2017.04.06 at 10h 20m 54s.xml">
       <configuration name="EnergyUtilsTest" configurationId="JUnit" />
     </history-entry>
@@ -943,8 +962,14 @@
     <history-entry file="EnergyUtilsTest_testTransferFromShipToShield - 2017.04.06 at 10h 35m 45s.xml">
       <configuration name="EnergyUtilsTest.testTransferFromShipToShield" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SubSystemTest - 2017.04.06 at 10h 16m 42s.xml">
-      <configuration name="SubSystemTest" configurationId="JUnit" />
+    <history-entry file="ShieldTest_testSetShieldEnergy - 2017.04.06 at 10h 42m 56s.xml">
+      <configuration name="ShieldTest.testSetShieldEnergy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShipReserveTest_testSetEnergyPointsOnDamagedShield - 2017.04.06 at 10h 48m 14s.xml">
+      <configuration name="ShipReserveTest.testSetEnergyPointsOnDamagedShield" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShipReserveTest_testSetEnergyPointsOnDamagedShield - 2017.04.06 at 10h 48m 43s.xml">
+      <configuration name="ShipReserveTest.testSetEnergyPointsOnDamagedShield" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -959,9 +984,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19369973" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3524229" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42437592" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19369973" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41556534" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6343612" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1128,35 +1153,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/ShipReserve.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding>
-            <element signature="e#179#180#0" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Utils/EnergyUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Utils/EnergyUtilsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1171,12 +1171,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/model/ShieldTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Utils/EnergyUtilsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="61" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/model/ShieldTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/model/ShipReserveTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/ShipReserve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <element signature="e#179#180#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
           </folding>
         </state>
       </provider>

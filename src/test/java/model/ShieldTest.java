@@ -1,5 +1,6 @@
 package model;
 
+import Utils.EnergyUtils;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -11,7 +12,7 @@ public class ShieldTest {
     @Test
     public void testIsDown() {
         Shield shield = new Shield();
-        Assert.assertEquals(shield.isDown(), false);
+        Assert.assertEquals(shield.isDown(), true);
     }
 
     @Test
@@ -36,6 +37,18 @@ public class ShieldTest {
         shield.raiseShield();
 
         Assert.assertEquals(shield.isDown(), true);
+    }
+
+    @Test
+    public void testSetShieldEnergy() {
+
+        Shield shield = new Shield();
+        int energyUnits =  EnergyUtils.MIN_ENERGY_UNITS +
+                (int)(Math.random() * (( EnergyUtils.MAX_ENERGY_UNITS - EnergyUtils.MIN_ENERGY_UNITS) + 1));
+
+        shield.setEnergyPoints(energyUnits);
+
+        Assert.assertEquals(shield.getEnergyPoints(), energyUnits);
     }
 
 
