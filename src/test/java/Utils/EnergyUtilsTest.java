@@ -31,6 +31,7 @@ public class EnergyUtilsTest {
 
     }
 
+    /* Test transfer an amount more than max */
     @Test
     public void testInvalidHighTransferFromShipToShield () {
 
@@ -38,8 +39,16 @@ public class EnergyUtilsTest {
         boolean success = EnergyUtils.transferFromShipReservesToShield(ship, shield, 11000);
         Assert.assertEquals(success, false);
         Assert.assertEquals(ship.getEnergyPoints(), shipEnergyPoints);
-        //TODO
     }
 
+     /* Test transfer an amount more than what the ship has */
+
+    @Test
+    public void testInvalidLowTransferFromShipToShield () {
+        int shipEnergyPoints = ship.getEnergyPoints();
+        boolean success = EnergyUtils.transferFromShipReservesToShield(ship, shield, 300);
+        Assert.assertEquals(success, false);
+        Assert.assertEquals(ship.getEnergyPoints(), shipEnergyPoints);
+    }
 
 }

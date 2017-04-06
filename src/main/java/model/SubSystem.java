@@ -13,6 +13,5 @@ public class SubSystem {
 
 	public void repair() {
 		damaged = false;
-		
 	}
 }

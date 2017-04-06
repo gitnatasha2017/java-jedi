@@ -28,6 +28,15 @@ public class ShieldTest {
         Assert.assertEquals(shield.isDown(), true);
     }
 
+    @Test
+    public void testRaiseOnDamagedShield() {
+
+        Shield shield = new Shield();
+        shield.setDamaged();
+        shield.raiseShield();
+
+        Assert.assertEquals(shield.isDown(), true);
+    }
 }
 
 

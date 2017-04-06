@@ -5,10 +5,9 @@ import Utils.EnergyUtils;
 /**
  * Created by ahmedr3 on 4/5/2017.
  */
-public class ShipReserve {
+public class ShipReserve extends SubSystem{
 
     int energyPoints;
-
 
     public ShipReserve() {
         energyPoints = EnergyUtils.MAX_ENERGY_UNITS;
@@ -24,7 +23,7 @@ public class ShipReserve {
 
     public void setEnergyPoints(int energyPoints) {
 
-        if (EnergyUtils.isEnergyInRange(energyPoints)) {
+        if (!isDamaged() && EnergyUtils.isEnergyInRange(energyPoints)) {
             this.energyPoints = energyPoints;
         }
         this.energyPoints = energyPoints;

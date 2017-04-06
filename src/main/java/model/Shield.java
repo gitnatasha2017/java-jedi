@@ -5,26 +5,37 @@ import Utils.EnergyUtils;
 /**
  * Created by ahmedr3 on 4/5/2017.
  */
-public class Shield {
+public class Shield extends SubSystem {
 
     int energyPoints;
+    boolean down;
 
     public Shield() {
+        down = true;
         energyPoints = EnergyUtils.MAX_ENERGY_UNITS;
     }
 
     public Shield(int energyPoints) {
+        down = true;
         this.energyPoints = energyPoints;
     }
-
-    boolean down;
 
     public boolean isDown() {
         return  down;
     }
 
     public void raiseShield() {
-        down = false;
+        if (!isDamaged()) {
+            down = false;
+        } else {
+            down = true;
+        }
+    }
+
+    @Override
+    public void setDamaged() {
+        super.setDamaged();
+        lowerShield();
     }
 
     public void lowerShield() {
@@ -36,7 +47,7 @@ public class Shield {
     }
 
     public void setEnergyPoints(int energyPoints) {
-        if (EnergyUtils.isEnergyInRange(energyPoints)) {
+        if (!isDamaged() && EnergyUtils.isEnergyInRange(energyPoints)) {
             this.energyPoints = energyPoints;
         }
     }
