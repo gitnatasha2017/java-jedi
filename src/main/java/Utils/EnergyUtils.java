@@ -32,7 +32,7 @@ public class EnergyUtils {
             return false;
         }
 
-        shield.setEnergyPoints(shieldEnergyPoints+units);
+        shield.setEnergyPoints(shieldEnergyPoints);
 
         return true;
     }

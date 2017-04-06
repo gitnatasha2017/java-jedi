@@ -20,7 +20,7 @@ public class EnergyUtilsTest {
         shield = new Shield(100 );
     }
 
-    //@Test
+    @Test
     public void testTransferFromShipToShield () {
 
         boolean success = EnergyUtils.transferFromShipReservesToShield(ship, shield, 5);
