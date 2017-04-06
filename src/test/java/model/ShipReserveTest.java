@@ -13,7 +13,7 @@ public class ShipReserveTest {
     }
 
     @Test
-    public void testSetEnergyPointsOnDamagedShield() {
+    public void testSetEnergyPointsOnDamagedShipReserve() {
 
 
         int initialEnergyUnits =  EnergyUtils.MIN_ENERGY_UNITS +

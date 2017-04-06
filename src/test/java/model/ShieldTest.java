@@ -52,6 +52,28 @@ public class ShieldTest {
     }
 
 
+    @Test
+    public void testSetEnergyPointsOnDamagedShield() {
+
+
+        int initialEnergyUnits =  EnergyUtils.MIN_ENERGY_UNITS +
+                (int)(Math.random() * (( EnergyUtils.MAX_ENERGY_UNITS - EnergyUtils.MIN_ENERGY_UNITS) + 1));
+
+        Shield shield = new Shield(initialEnergyUnits);
+
+        Assert.assertEquals(shield.getEnergyPoints(), initialEnergyUnits);
+
+        shield.setDamaged();
+
+        int energyUnits =  EnergyUtils.MIN_ENERGY_UNITS +
+                (int)(Math.random() * (( EnergyUtils.MAX_ENERGY_UNITS - EnergyUtils.MIN_ENERGY_UNITS) + 1));
+
+        shield.setEnergyPoints(energyUnits);
+
+        // Should not have changed
+        Assert.assertEquals(shield.getEnergyPoints(), initialEnergyUnits);
+    }
+
 }
 
 
