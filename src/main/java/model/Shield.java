@@ -1,6 +1,6 @@
 package model;
 
-import Utils.SubsystemClient;
+import client.SubsystemClient;
 
 /**
  * Created by ahmedr3 on 4/5/2017.

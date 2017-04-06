@@ -1,4 +1,4 @@
-package Utils;
+package client;
 
 import model.Shield;
 import model.ShipReserve;

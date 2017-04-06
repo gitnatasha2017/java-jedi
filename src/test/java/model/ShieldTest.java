@@ -1,6 +1,6 @@
 package model;
 
-import Utils.SubsystemClient;
+import client.SubsystemClient;
 import org.junit.Assert;
 import org.junit.Test;
 
