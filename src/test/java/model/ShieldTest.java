@@ -1,6 +1,6 @@
 package model;
 
-import Utils.EnergyUtils;
+import Utils.SubsystemClient;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -43,8 +43,8 @@ public class ShieldTest {
     public void testSetShieldEnergy() {
 
         Shield shield = new Shield();
-        int energyUnits =  EnergyUtils.MIN_ENERGY_UNITS +
-                (int)(Math.random() * (( EnergyUtils.MAX_ENERGY_UNITS - EnergyUtils.MIN_ENERGY_UNITS) + 1));
+        int energyUnits =  SubsystemClient.MIN_ENERGY_UNITS +
+                (int)(Math.random() * (( SubsystemClient.MAX_ENERGY_UNITS - SubsystemClient.MIN_ENERGY_UNITS) + 1));
 
         shield.setEnergyPoints(energyUnits);
 
@@ -56,8 +56,8 @@ public class ShieldTest {
     public void testSetEnergyPointsOnDamagedShield() {
 
 
-        int initialEnergyUnits =  EnergyUtils.MIN_ENERGY_UNITS +
-                (int)(Math.random() * (( EnergyUtils.MAX_ENERGY_UNITS - EnergyUtils.MIN_ENERGY_UNITS) + 1));
+        int initialEnergyUnits =  SubsystemClient.MIN_ENERGY_UNITS +
+                (int)(Math.random() * (( SubsystemClient.MAX_ENERGY_UNITS - SubsystemClient.MIN_ENERGY_UNITS) + 1));
 
         Shield shield = new Shield(initialEnergyUnits);
 
@@ -65,8 +65,8 @@ public class ShieldTest {
 
         shield.setDamaged();
 
-        int energyUnits =  EnergyUtils.MIN_ENERGY_UNITS +
-                (int)(Math.random() * (( EnergyUtils.MAX_ENERGY_UNITS - EnergyUtils.MIN_ENERGY_UNITS) + 1));
+        int energyUnits =  SubsystemClient.MIN_ENERGY_UNITS +
+                (int)(Math.random() * (( SubsystemClient.MAX_ENERGY_UNITS - SubsystemClient.MIN_ENERGY_UNITS) + 1));
 
         shield.setEnergyPoints(energyUnits);
 

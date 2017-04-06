@@ -6,26 +6,26 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Random;
-
 /**
  * Created by ahmedr3 on 4/5/2017.
  */
-public class EnergyUtilsTest {
+public class SubsystemClientTest {
 
     ShipReserve ship;
     Shield shield;
+    SubsystemClient subsystemClient;
 
     @Before
     public void init() {
         ship = new ShipReserve(200);
         shield = new Shield(100 );
+        subsystemClient = new SubsystemClient();
     }
 
     @Test
     public void testTransferFromShipToShield () {
 
-        boolean success = EnergyUtils.transferFromShipReservesToShield(ship, shield, 5);
+        boolean success = subsystemClient.transferFromShipReservesToShield(ship, shield, 5);
 
         Assert.assertEquals(success, true);
         Assert.assertEquals(ship.getEnergyPoints(), 195);
@@ -38,7 +38,7 @@ public class EnergyUtilsTest {
     public void testInvalidHighTransferFromShipToShield () {
 
         int shipEnergyPoints = ship.getEnergyPoints();
-        boolean success = EnergyUtils.transferFromShipReservesToShield(ship, shield,  EnergyUtils.MAX_ENERGY_UNITS + 1000);
+        boolean success = subsystemClient.transferFromShipReservesToShield(ship, shield,  SubsystemClient.MAX_ENERGY_UNITS + 1000);
         Assert.assertEquals(success, false);
         Assert.assertEquals(ship.getEnergyPoints(), shipEnergyPoints);
     }
@@ -47,8 +47,8 @@ public class EnergyUtilsTest {
     @Test
     public void testInvalidLowTransferFromShipToShield () {
         int shipEnergyPoints = ship.getEnergyPoints();
-        int transferUnits = Math.min(shipEnergyPoints + 200, EnergyUtils.MAX_ENERGY_UNITS) ;
-        boolean success = EnergyUtils.transferFromShipReservesToShield(ship, shield, transferUnits);
+        int transferUnits = Math.min(shipEnergyPoints + 200, SubsystemClient.MAX_ENERGY_UNITS) ;
+        boolean success = subsystemClient.transferFromShipReservesToShield(ship, shield, transferUnits);
         Assert.assertEquals(success, false);
         Assert.assertEquals(ship.getEnergyPoints(), shipEnergyPoints);
     }
@@ -57,10 +57,10 @@ public class EnergyUtilsTest {
     public void testTransferFromDamagedShipToShield () {
 
         ship.setDamaged();
-        int transferUnits =  EnergyUtils.MIN_ENERGY_UNITS +
-                (int)(Math.random() * (( EnergyUtils.MAX_ENERGY_UNITS - EnergyUtils.MIN_ENERGY_UNITS) + 1));
+        int transferUnits =  SubsystemClient.MIN_ENERGY_UNITS +
+                (int)(Math.random() * (( SubsystemClient.MAX_ENERGY_UNITS - SubsystemClient.MIN_ENERGY_UNITS) + 1));
 
-        boolean success = EnergyUtils.transferFromShipReservesToShield(ship, shield, transferUnits);
+        boolean success = subsystemClient.transferFromShipReservesToShield(ship, shield, transferUnits);
 
         Assert.assertEquals(success, false);
         /* Verify if original values */

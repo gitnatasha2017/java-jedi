@@ -1,6 +1,6 @@
 package model;
 
-import Utils.EnergyUtils;
+import Utils.SubsystemClient;
 
 /**
  * Created by ahmedr3 on 4/5/2017.
@@ -10,7 +10,7 @@ public class ShipReserve extends SubSystem{
     int energyPoints;
 
     public ShipReserve() {
-        energyPoints = EnergyUtils.MAX_ENERGY_UNITS;
+        energyPoints = SubsystemClient.MAX_ENERGY_UNITS;
     }
 
     public ShipReserve(int energyPoints) {
@@ -23,7 +23,7 @@ public class ShipReserve extends SubSystem{
 
     public void setEnergyPoints(int energyPoints) {
 
-        if (!isDamaged() && EnergyUtils.isEnergyInRange(energyPoints)) {
+        if (!isDamaged() && SubsystemClient.isEnergyInRange(energyPoints)) {
             this.energyPoints = energyPoints;
         }
     }

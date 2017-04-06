@@ -1,6 +1,6 @@
 package model;
 
-import Utils.EnergyUtils;
+import Utils.SubsystemClient;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -9,15 +9,15 @@ public class ShipReserveTest {
     @Test
     public void testShipReserveCreated() {
         ShipReserve shipReserve = new ShipReserve();
-        Assert.assertEquals(shipReserve.getEnergyPoints(), EnergyUtils.MAX_ENERGY_UNITS);
+        Assert.assertEquals(shipReserve.getEnergyPoints(), SubsystemClient.MAX_ENERGY_UNITS);
     }
 
     @Test
     public void testSetEnergyPointsOnDamagedShipReserve() {
 
 
-        int initialEnergyUnits =  EnergyUtils.MIN_ENERGY_UNITS +
-                (int)(Math.random() * (( EnergyUtils.MAX_ENERGY_UNITS - EnergyUtils.MIN_ENERGY_UNITS) + 1));
+        int initialEnergyUnits =  SubsystemClient.MIN_ENERGY_UNITS +
+                (int)(Math.random() * (( SubsystemClient.MAX_ENERGY_UNITS - SubsystemClient.MIN_ENERGY_UNITS) + 1));
 
         ShipReserve shipReserve = new ShipReserve(initialEnergyUnits);
 
@@ -25,8 +25,8 @@ public class ShipReserveTest {
 
         shipReserve.setDamaged();
 
-        int energyUnits =  EnergyUtils.MIN_ENERGY_UNITS +
-                (int)(Math.random() * (( EnergyUtils.MAX_ENERGY_UNITS - EnergyUtils.MIN_ENERGY_UNITS) + 1));
+        int energyUnits =  SubsystemClient.MIN_ENERGY_UNITS +
+                (int)(Math.random() * (( SubsystemClient.MAX_ENERGY_UNITS - SubsystemClient.MIN_ENERGY_UNITS) + 1));
 
         shipReserve.setEnergyPoints(energyUnits);
 
@@ -38,8 +38,8 @@ public class ShipReserveTest {
     public void testSetShipReserveEnergy() {
 
         ShipReserve shipReserve = new ShipReserve();
-        int energyUnits =  EnergyUtils.MIN_ENERGY_UNITS +
-                (int)(Math.random() * (( EnergyUtils.MAX_ENERGY_UNITS - EnergyUtils.MIN_ENERGY_UNITS) + 1));
+        int energyUnits =  SubsystemClient.MIN_ENERGY_UNITS +
+                (int)(Math.random() * (( SubsystemClient.MAX_ENERGY_UNITS - SubsystemClient.MIN_ENERGY_UNITS) + 1));
 
         shipReserve.setEnergyPoints(energyUnits);
 

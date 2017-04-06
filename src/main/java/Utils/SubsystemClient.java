@@ -6,12 +6,12 @@ import model.ShipReserve;
 /**
  * Created by ahmedr3 on 4/5/2017.
  */
-public class EnergyUtils {
+public class SubsystemClient {
 
     public static final int MIN_ENERGY_UNITS = 0;
     public static final int MAX_ENERGY_UNITS = 10000;
 
-    public static boolean transferFromShipReservesToShield(ShipReserve shipReserve, Shield shield, int units) {
+    public boolean transferFromShipReservesToShield(ShipReserve shipReserve, Shield shield, int units) {
 
         if (shipReserve.isDamaged() || shield.isDamaged()) {
             return false;

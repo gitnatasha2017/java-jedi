@@ -1,6 +1,6 @@
 package model;
 
-import Utils.EnergyUtils;
+import Utils.SubsystemClient;
 
 /**
  * Created by ahmedr3 on 4/5/2017.
@@ -12,7 +12,7 @@ public class Shield extends SubSystem {
 
     public Shield() {
         down = true;
-        energyPoints = EnergyUtils.MAX_ENERGY_UNITS;
+        energyPoints = SubsystemClient.MAX_ENERGY_UNITS;
     }
 
     public Shield(int energyPoints) {
@@ -47,7 +47,7 @@ public class Shield extends SubSystem {
     }
 
     public void setEnergyPoints(int energyPoints) {
-        if (!isDamaged() && EnergyUtils.isEnergyInRange(energyPoints)) {
+        if (!isDamaged() && SubsystemClient.isEnergyInRange(energyPoints)) {
             this.energyPoints = energyPoints;
         }
     }
