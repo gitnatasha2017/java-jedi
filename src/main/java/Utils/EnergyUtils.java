@@ -8,8 +8,8 @@ import model.ShipReserve;
  */
 public class EnergyUtils {
 
-    private static final int MIN_ENERGY_UNITS = 0;
-    private static final int MAX_ENERGY_UNITS = 10000;
+    public static final int MIN_ENERGY_UNITS = 0;
+    public static final int MAX_ENERGY_UNITS = 10000;
 
     public static boolean transferFromShipReservesToShield(ShipReserve shipReserve, Shield shield, int units) {
 
