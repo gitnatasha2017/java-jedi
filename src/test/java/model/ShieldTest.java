@@ -37,6 +37,8 @@ public class ShieldTest {
 
         Assert.assertEquals(shield.isDown(), true);
     }
+
+
 }
 
 
