@@ -6,7 +6,10 @@ import model.ShipReserve;
 /**
  * Created by ahmedr3 on 4/5/2017.
  */
-public class TransferUtils {
+public class EnergyUtils {
+
+    private static final int MIN_ENERGY_UNITS = 0;
+    private static final int MAX_ENERGY_UNITS = 10000;
 
     public static boolean transferFromShipReservesToShield(ShipReserve shipReserve, Shield shield, int units) {
 
@@ -18,14 +21,30 @@ public class TransferUtils {
         shipEnergyoints -= units;
         shipReserve.setEnergyPoints(shipEnergyoints);
 
-        int shieldEnergyPoints = shield.getEnergyPoints();
+        int shieldEnergyPoints = shield.getEnergyPoints() + units;
+
+        if (shieldEnergyPoints > MAX_ENERGY_UNITS) {
+            shieldEnergyPoints = MAX_ENERGY_UNITS;
+        }
+        boolean isValid = isEnergyInRange(shieldEnergyPoints);
+
+        if (!isValid) {
+            return false;
+        }
+
         shield.setEnergyPoints(shieldEnergyPoints+units);
 
         return true;
     }
 
-    public static void validateEnergyRange(int units) {
+    public static boolean isEnergyInRange(int units) {
 
-        if (units )
+        if (units < MIN_ENERGY_UNITS || units > MAX_ENERGY_UNITS) {
+            return  false;
+        }
+
+        return true;
     }
+
+
 }
