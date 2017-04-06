@@ -11,7 +11,7 @@ public class ShipReserve {
 
 
     public ShipReserve() {
-        energyPoints = 0;
+        energyPoints = EnergyUtils.MAX_ENERGY_UNITS;
     }
 
     public ShipReserve(int energyPoints) {

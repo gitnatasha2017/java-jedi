@@ -10,7 +10,7 @@ public class Shield {
     int energyPoints;
 
     public Shield() {
-        energyPoints = 0;
+        energyPoints = EnergyUtils.MAX_ENERGY_UNITS;
     }
 
     public Shield(int energyPoints) {
