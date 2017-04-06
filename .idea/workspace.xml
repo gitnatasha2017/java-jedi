@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d975a67f-3a20-476b-aa0b-de7ee74b6fd7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/Shield.java" afterPath="$PROJECT_DIR$/src/main/java/model/Shield.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/ShipReserve.java" afterPath="$PROJECT_DIR$/src/main/java/model/ShipReserve.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/SubSystem.java" afterPath="$PROJECT_DIR$/src/main/java/model/SubSystem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Utils/EnergyUtils.java" afterPath="$PROJECT_DIR$/src/main/java/Utils/EnergyUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Utils/EnergyUtilsTest.java" afterPath="$PROJECT_DIR$/src/test/java/Utils/EnergyUtilsTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/model/ShieldTest.java" afterPath="$PROJECT_DIR$/src/test/java/model/ShieldTest.java" />
     </list>
     <list id="d672ef5e-bded-4a1d-b8d6-cc33e3e939d4" name="DoNotCommit" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_unknown.xml" afterPath="" />
@@ -58,8 +55,8 @@
       <file leaf-file-name="EnergyUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Utils/EnergyUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+            <state relative-caret-position="176">
+              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,7 +64,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShipReserve.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ShipReserve.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/ShipReserve.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -84,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EnergyUtilsTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EnergyUtilsTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Utils/EnergyUtilsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="50" column="70" lean-forward="false" selection-start-line="50" selection-start-column="70" selection-end-line="50" selection-end-column="70" />
+            <state relative-caret-position="440">
+              <caret line="61" column="57" lean-forward="false" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,12 +184,12 @@
         <option value="$PROJECT_DIR$/src/test/java/Utils/TransferUtilsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Utils/TransferUtils.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Utils/EnergyUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/SubSystem.java" />
         <option value="$PROJECT_DIR$/src/test/java/model/ShieldTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Shield.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Utils/EnergyUtilsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/ShipReserve.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Utils/EnergyUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Utils/EnergyUtilsTest.java" />
       </list>
     </option>
   </component>
@@ -491,7 +488,7 @@
       <recent name="app" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SubSystemTest">
+  <component name="RunManager" selected="JUnit.EnergyUtilsTest">
     <configuration default="false" name="EnergyUtilsTest.testInvalidLowTransferFromShipToShield" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -857,8 +854,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SubSystemTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SubSystemTest" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.ShieldTest" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.ShieldTest.testRaiseOnDamagedShield" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.EnergyUtilsTest.testInvalidLowTransferFromShipToShield" />
@@ -901,7 +898,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491496976824</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed energy transfer utils">
+      <created>1491499096972</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1491499096972</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -911,11 +915,11 @@
     <history-entry file="EnergyUtilsTest - 2017.04.06 at 10h 16m 31s.xml">
       <configuration name="EnergyUtilsTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="EnergyUtilsTest - 2017.04.06 at 10h 20m 54s.xml">
+      <configuration name="EnergyUtilsTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="EnergyUtilsTest_testInvalidLowTransferFromShipToShield - 2017.04.06 at 09h 49m 12s.xml">
       <configuration name="EnergyUtilsTest.testInvalidLowTransferFromShipToShield" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EnergyUtilsTest_testTransferFromShipToShield - 2017.04.06 at 09h 42m 13s.xml">
-      <configuration name="EnergyUtilsTest.testTransferFromShipToShield" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ShieldTest - 2017.04.06 at 10h 13m 54s.xml">
       <configuration name="ShieldTest" configurationId="JUnit" />
@@ -950,7 +954,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19369973" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40969163" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41556534" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4434655" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1003,7 +1007,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Utils/EnergyUtils.java</url>
-          <line>15</line>
+          <line>18</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -1124,30 +1128,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/EnergyUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/model/ShieldTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Utils/EnergyUtilsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="50" column="70" lean-forward="false" selection-start-line="50" selection-start-column="70" selection-end-line="50" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1165,6 +1149,26 @@
             <element signature="e#330#331#0" expanded="true" />
             <element signature="e#366#367#0" expanded="true" />
             <element signature="e#402#403#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/EnergyUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Utils/EnergyUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="61" column="57" lean-forward="false" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

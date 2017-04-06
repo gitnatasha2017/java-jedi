@@ -51,4 +51,16 @@ public class EnergyUtilsTest {
         Assert.assertEquals(ship.getEnergyPoints(), shipEnergyPoints);
     }
 
+    @Test
+    public void testTransferFromDamagedShipToShield () {
+
+        ship.setDamaged();
+        boolean success = EnergyUtils.transferFromShipReservesToShield(ship, shield, 5);
+
+        Assert.assertEquals(success, false);
+        Assert.assertEquals(ship.getEnergyPoints(), 200 );
+        Assert.assertEquals(shield.getEnergyPoints(), 100);
+
+    }
+
 }

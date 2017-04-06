@@ -13,6 +13,9 @@ public class EnergyUtils {
 
     public static boolean transferFromShipReservesToShield(ShipReserve shipReserve, Shield shield, int units) {
 
+        if (shipReserve.isDamaged() || shield.isDamaged()) {
+            return false;
+        }
         int shipEnergyoints = shipReserve.getEnergyPoints();
         if (units > shipEnergyoints) {
             return false;
