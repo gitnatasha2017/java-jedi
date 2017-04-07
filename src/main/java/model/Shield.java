@@ -49,6 +49,8 @@ public class Shield extends SubSystem {
     public void setEnergyPoints(int energyPoints) {
         if (!isDamaged() && SubsystemClient.isEnergyInRange(energyPoints)) {
             this.energyPoints = energyPoints;
+        } else {
+            this.energyPoints = 0;
         }
     }
 

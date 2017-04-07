@@ -64,9 +64,7 @@ public class ShieldTest {
         int energyUnits = TestUtilities.getAnyIntInRange(SubsystemClient.MIN_ENERGY_UNITS, SubsystemClient.MAX_ENERGY_UNITS);
 
         shield.setEnergyPoints(energyUnits);
-
-        // Should not have changed
-        Assert.assertEquals(shield.getEnergyPoints(), initialEnergyUnits);
+        Assert.assertEquals(shield.getEnergyPoints(), 0);
     }
 
 }
