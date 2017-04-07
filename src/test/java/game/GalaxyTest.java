@@ -28,7 +28,7 @@ public class GalaxyTest {
     }
 
     @Test
-    public void testValidQuadrant() {
+    public void testValidQuadrantInGalaxy() {
 
         int defaultNumQuadrants = Galaxy.defaultQuadrantLength  * Galaxy.defaultQuadrantWidth;
         int invalidQuadrantNumber = defaultNumQuadrants + 20;
@@ -39,7 +39,7 @@ public class GalaxyTest {
     }
 
     @Test
-    public void testGetQuadrantByQuadrantNumber() {
+    public void testGetQuadrantInGalaxy() {
 
         Galaxy galaxy = new Galaxy();
         int numQuads = galaxy.getNumQuadrantsInGalaxy();

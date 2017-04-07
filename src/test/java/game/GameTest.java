@@ -49,9 +49,7 @@ public class GameTest {
         Location location = null;
 
         Game game = new Game(numKlingons, numStarbases, numStarDates, location);
-
     }
-
 
     @Test(expected=IllegalArgumentException.class)
     public void testInitializeGameInvalidNumKlingons() {
@@ -62,7 +60,6 @@ public class GameTest {
         Location location = null;
 
         Game game = new Game(numKlingons, numStarbases, numStarDates, location);
-
     }
 
     @Test(expected=IllegalArgumentException.class)
@@ -74,7 +71,6 @@ public class GameTest {
         Location location = null;
 
         Game game = new Game(numKlingons, numStarbases, numStarDates, location);
-
     }
 
     @Test(expected=IllegalArgumentException.class)
@@ -86,7 +82,6 @@ public class GameTest {
         Location location = null;
 
         Game game = new Game(numKlingons, numStarbases, numStarDates, location);
-
     }
 
 }
