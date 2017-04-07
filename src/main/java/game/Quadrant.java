@@ -1,6 +1,7 @@
 package game;
 
 import java.awt.*;
+import java.util.HashSet;
 import java.util.Set;
 
 public class Quadrant {
@@ -30,6 +31,7 @@ public class Quadrant {
 
     public Quadrant(int quadrantNumber) {
         this.quadrantNumber = quadrantNumber;
+        sectors = new HashSet<Point>();
         for (int i=0; i < defaultSectorLength; i++) {
             for (int j= 0; j < defaultSectorWidth; j++) {
                 Point sector = new Point(i,j);
@@ -41,6 +43,7 @@ public class Quadrant {
 
     public Quadrant(int quadrantNumber, int l, int w) {
         this.quadrantNumber = quadrantNumber;
+        sectors = new HashSet<Point>();
         for (int i=0; i < l; i++) {
             for (int j= 0; j < w; j++) {
                 Point point = new Point(i,j);
@@ -55,6 +58,33 @@ public class Quadrant {
             return true;
         }
         return false;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+
+        if (o == null || !(o instanceof Quadrant)) {
+            return false;
+        }
+
+        Quadrant otherQuadrant = (Quadrant) o;
+        if ((otherQuadrant.quadrantNumber == this.quadrantNumber) &&
+                (otherQuadrant.sectors.equals(this.sectors)) ){
+            return  true;
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+
+        int hashCode = 31;
+
+        hashCode = hashCode + this.quadrantNumber * 31;
+        hashCode = hashCode + this.sectors.hashCode();
+
+        return hashCode;
     }
 
 }

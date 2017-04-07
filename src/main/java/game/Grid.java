@@ -1,6 +1,9 @@
 package game;
 
-import java.awt.*;
+import java.awt.Point;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -24,6 +27,7 @@ public class Grid {
     public Grid() {
 
         int quadrantNumber = 1;
+        quadrants = new HashSet<Quadrant>();
         for (int i=0; i < defaultQuadrantLength; i++) {
             for (int j= 0; j < defaultQuadrantWidth; j++) {
                 Quadrant quadrant = new Quadrant(quadrantNumber);//todo
@@ -45,12 +49,80 @@ public class Grid {
         }
     }
 
-/*    public boolean isValidLocation(Point p) {
-        if (quadrant.contains(p)) {
+    public Quadrant getQuadrantByQuadrantNumber(int quadrantNumber) {
+
+        for (Quadrant quadrant : quadrants ) {
+
+            if (quadrant.getQuadrantNumber() == quadrantNumber) {
+                return quadrant;
+            }
+        }
+
+        return null;
+    }
+
+    public boolean isValidQuadrant(int quadrantNumber) {
+
+        Set<Integer> quadrantNumbers = new HashSet<Integer>();
+
+        for (Quadrant q : quadrants) {
+            quadrantNumbers.add(q.getQuadrantNumber());
+        }
+        if (quadrantNumbers.contains(quadrantNumber)) {
             return true;
         }
         return false;
-    } */
+    }
 
+    public boolean isValidSector(Quadrant quadrant, Point pSector) {
+
+        if (pSector == null) {
+            return false;
+        }
+
+        if (!quadrant.isValidSector(pSector)) {
+            return false;
+        }
+        return true;
+    }
+
+    public boolean isValidLocation(Location location) {
+
+        int quadrantNumber = location.getQuadrantNumber();
+        Point sector = location.sector;
+
+        if (!isValidQuadrant(quadrantNumber)) {
+            return false;
+        }
+        Quadrant quadrant = getQuadrantByQuadrantNumber(location.getQuadrantNumber());
+        if (!isValidSector(quadrant, location.getSector())) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+
+        if (o == null || !(o instanceof Grid)) {
+            return false;
+        }
+
+        Grid otherGrid = (Grid) o;
+        if ((otherGrid.quadrants.equals(this.quadrants)) ){
+            return  true;
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+
+        int hashCode = 31;
+
+        hashCode = hashCode + this.quadrants.hashCode() * 31;
+
+        return hashCode;
+    }
 
 }
