@@ -15,6 +15,10 @@ public class Quadrant {
     }
 
     public void setQuadrantNumber(int quadrantNumber) {
+
+        if (quadrantNumber <= 0) {
+            throw new IllegalArgumentException("Invaid quadrant number specified.");
+        }
         this.quadrantNumber = quadrantNumber;
     }
 
@@ -30,7 +34,8 @@ public class Quadrant {
     public static final int defaultSectorWidth = 10;
 
     public Quadrant(int quadrantNumber) {
-        this.quadrantNumber = quadrantNumber;
+
+        setQuadrantNumber(quadrantNumber);
         sectors = new HashSet<Point>();
         for (int i=0; i < defaultSectorLength; i++) {
             for (int j= 0; j < defaultSectorWidth; j++) {

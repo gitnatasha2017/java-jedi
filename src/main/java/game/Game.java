@@ -14,6 +14,14 @@ public class Game {
     Location location;
 
 
+    public Galaxy getGalaxy() {
+        return galaxy;
+    }
+
+    public void setGalaxy(Galaxy galaxy) {
+        this.galaxy = galaxy;
+    }
+
     public Game(int numKlingons, int numStarbases, int numStarDates, Location location) {
 
         this.galaxy = new Galaxy();

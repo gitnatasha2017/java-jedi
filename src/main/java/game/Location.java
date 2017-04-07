@@ -30,10 +30,6 @@ public class Location {
         this.sector = p;
     }
 
-    public boolean isValidLocation(Galaxy galaxy, Location location) {
-        return (galaxy.getQuadrants().contains(location)) ;
-    }
-
     @Override
     public boolean equals(Object o) {
 
