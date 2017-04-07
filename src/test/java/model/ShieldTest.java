@@ -43,8 +43,7 @@ public class ShieldTest {
     public void testSetShieldEnergy() {
 
         Shield shield = new Shield();
-        int energyUnits =  SubsystemClient.MIN_ENERGY_UNITS +
-                (int)(Math.random() * (( SubsystemClient.MAX_ENERGY_UNITS - SubsystemClient.MIN_ENERGY_UNITS) + 1));
+        int energyUnits =  TestUtilities.getAnyIntInRange(SubsystemClient.MIN_ENERGY_UNITS, SubsystemClient.MAX_ENERGY_UNITS);
 
         shield.setEnergyPoints(energyUnits);
 
@@ -55,18 +54,14 @@ public class ShieldTest {
     @Test
     public void testSetEnergyPointsOnDamagedShield() {
 
-
-        int initialEnergyUnits =  SubsystemClient.MIN_ENERGY_UNITS +
-                (int)(Math.random() * (( SubsystemClient.MAX_ENERGY_UNITS - SubsystemClient.MIN_ENERGY_UNITS) + 1));
+        int initialEnergyUnits =  TestUtilities.getAnyIntInRange(SubsystemClient.MIN_ENERGY_UNITS, SubsystemClient.MAX_ENERGY_UNITS);
 
         Shield shield = new Shield(initialEnergyUnits);
 
         Assert.assertEquals(shield.getEnergyPoints(), initialEnergyUnits);
-
         shield.setDamaged();
 
-        int energyUnits =  SubsystemClient.MIN_ENERGY_UNITS +
-                (int)(Math.random() * (( SubsystemClient.MAX_ENERGY_UNITS - SubsystemClient.MIN_ENERGY_UNITS) + 1));
+        int energyUnits = TestUtilities.getAnyIntInRange(SubsystemClient.MIN_ENERGY_UNITS, SubsystemClient.MAX_ENERGY_UNITS);
 
         shield.setEnergyPoints(energyUnits);
 
