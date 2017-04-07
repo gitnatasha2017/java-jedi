@@ -52,7 +52,7 @@ public class Game {
         WarpEngine warpEngine = new WarpEngine(shipReserve, this);
         Shield shield = new Shield();
 
-        return new Ship(shipReserve, warpEngine, shield, location);
+        return new Ship(shipReserve, warpEngine, shield, location, this);
    }
 
     public Ship getShip() {

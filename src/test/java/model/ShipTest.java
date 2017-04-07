@@ -26,7 +26,7 @@ public class ShipTest {
         WarpEngine warpEngine = new WarpEngine(shipReserve, game);
         Shield shield = new Shield();
 
-        Ship ship = new Ship(shipReserve, warpEngine, shield, location );
+        Ship ship = new Ship(shipReserve, warpEngine, shield, location, game );
 
         Assert.assertNotNull(ship);
         Assert.assertEquals(ship.getLocation(), location);
