@@ -7,6 +7,7 @@ import java.awt.*;
  */
 public class Game {
 
+    Galaxy galaxy;
     int numKlingons;
     int numStarbases;
     int numStarDates;
@@ -15,6 +16,17 @@ public class Game {
 
     public Game(int numKlingons, int numStarbases, int starDates, Location location) {
 
+        this.galaxy = new Galaxy();
+        setNumKlingons(numKlingons);
+        setNumStarbases(numStarbases);
+        setNumStarDates(starDates);
+        setLocation(location);
+    }
+
+
+    public Game(Galaxy galaxy, int numKlingons, int numStarbases, int starDates, Location location) {
+
+        this.galaxy = galaxy;
         setNumKlingons(numKlingons);
         setNumStarbases(numStarbases);
         setNumStarDates(starDates);
