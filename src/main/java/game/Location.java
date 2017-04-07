@@ -34,6 +34,7 @@ public class Location {
         return (grid.getQuadrants().contains(location)) ;
     }
 
+    @Override
     public boolean equals(Object o) {
 
         if (o == null || !(o instanceof Location)) {
@@ -48,10 +49,15 @@ public class Location {
         return false;
     }
 
+    @Override
     public int hashCode() {
 
-        //TODO
-        return 0;
+        int hashCode = 31;
+
+        hashCode = hashCode + this.quadrantNumber * 31;
+        hashCode = hashCode + this.sector.hashCode();
+
+        return hashCode;
     }
 
 }
