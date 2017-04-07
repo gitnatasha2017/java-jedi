@@ -1,6 +1,5 @@
 package model;
 
-import java.awt.Point;
 import game.Location;
 import game.Game;
 
@@ -18,6 +17,9 @@ public class WarpEngine extends SubSystem{
 
 	
 	public void warp(int warpFactor, Location location) {
+		if (this.isDamaged()){
+			return;
+		}
 		int currentEnergy = shipReserve.getEnergyPoints();
 		currentEnergy = currentEnergy - 100;
 		shipReserve.setEnergyPoints(currentEnergy);
