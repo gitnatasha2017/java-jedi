@@ -32,6 +32,7 @@ public class GameTest {
         int numKlingons = 10;
         int numStarbases = 5;
         int numStarDates = 15;
+
         Location location = new Location(1, new Point(1,1));
 
         Game game = new Game(numKlingons, numStarbases, numStarDates, location);

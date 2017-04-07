@@ -1,15 +1,13 @@
 package game;
 
 import java.awt.Point;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 /**
  * Created by ahmedr3 on 4/7/2017.
  */
-public class Grid {
+public class Galaxy {
 
     public Set<Quadrant> getQuadrants() {
         return quadrants;
@@ -24,7 +22,7 @@ public class Grid {
     public static final int defaultQuadrantLength = 8;
     public static final int defaultQuadrantWidth = 8;
 
-    public Grid() {
+    public Galaxy() {
 
         int quadrantNumber = 1;
         quadrants = new HashSet<Quadrant>();
@@ -37,7 +35,7 @@ public class Grid {
         }
     }
 
-    public Grid(int l, int w) {
+    public Galaxy(int l, int w) {
 
         int quadrantNumber = 1;
         for (int i=0; i < l; i++) {
@@ -104,12 +102,12 @@ public class Grid {
     @Override
     public boolean equals(Object o) {
 
-        if (o == null || !(o instanceof Grid)) {
+        if (o == null || !(o instanceof Galaxy)) {
             return false;
         }
 
-        Grid otherGrid = (Grid) o;
-        if ((otherGrid.quadrants.equals(this.quadrants)) ){
+        Galaxy otherGalaxy = (Galaxy) o;
+        if ((otherGalaxy.quadrants.equals(this.quadrants)) ){
             return  true;
         }
         return false;

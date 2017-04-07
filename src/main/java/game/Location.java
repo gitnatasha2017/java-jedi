@@ -30,8 +30,8 @@ public class Location {
         this.sector = p;
     }
 
-    public boolean isValidLocation(Grid grid, Location location) {
-        return (grid.getQuadrants().contains(location)) ;
+    public boolean isValidLocation(Galaxy galaxy, Location location) {
+        return (galaxy.getQuadrants().contains(location)) ;
     }
 
     @Override
