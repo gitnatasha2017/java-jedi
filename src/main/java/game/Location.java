@@ -27,7 +27,7 @@ public class Location {
     }
 
     public void setSector(Point p) {
-        this.sector = sector;
+        this.sector = p;
     }
 
     public boolean isValidLocation(Grid grid, Location location) {
