@@ -14,7 +14,7 @@ public class QuadrantTest {
         int quadrantNumber = 10;
         Quadrant quadrant = new Quadrant(10);
 
-        int defaultSectorSize = Quadrant.defaultSectorLength * Quadrant.defaultSectorWidth;
+        int defaultSectorSize = Quadrant.DEFAULT_SECTOR_LENGTH * Quadrant.DEFAULT_SECTOR_WIDTH;
         Assert.assertEquals(quadrant.getQuadrantNumber(), quadrantNumber);
         Assert.assertEquals(quadrant.sectors.size(), defaultSectorSize);
     }
@@ -30,7 +30,7 @@ public class QuadrantTest {
     public void testQuadrantsEquality() {
         int quadrantNumber = 10;
         Quadrant quadrant1 = new Quadrant(10);
-        Quadrant quadrant2 = new Quadrant(10, Quadrant.defaultSectorLength, Quadrant.defaultSectorWidth);
+        Quadrant quadrant2 = new Quadrant(10, Quadrant.DEFAULT_SECTOR_LENGTH, Quadrant.DEFAULT_SECTOR_WIDTH);
 
         Assert.assertEquals(quadrant1, quadrant2);
     }
@@ -40,7 +40,7 @@ public class QuadrantTest {
 
         int quadrantNumber = 10;
         Quadrant quadrant1 = new Quadrant(10);
-        Quadrant quadrant2 = new Quadrant(20, Quadrant.defaultSectorLength, Quadrant.defaultSectorWidth);
+        Quadrant quadrant2 = new Quadrant(20, Quadrant.DEFAULT_SECTOR_LENGTH, Quadrant.DEFAULT_SECTOR_WIDTH);
 
         Assert.assertNotEquals(quadrant1, quadrant2);
     }
@@ -51,8 +51,8 @@ public class QuadrantTest {
         int quadrantNumber = 10;
         Quadrant quadrant1 = new Quadrant(10);
 
-        int l = Quadrant.defaultSectorLength + 20;
-        int w = Quadrant.defaultSectorWidth + 10;
+        int l = Quadrant.DEFAULT_SECTOR_LENGTH + 20;
+        int w = Quadrant.DEFAULT_SECTOR_WIDTH + 10;
 
         Quadrant quadrant2 = new Quadrant(10, l, w);
 

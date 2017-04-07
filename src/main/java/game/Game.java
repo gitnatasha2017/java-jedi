@@ -7,20 +7,11 @@ import java.awt.*;
  */
 public class Game {
 
-    Galaxy galaxy;
+    final Galaxy galaxy;
     int numKlingons;
     int numStarbases;
     int numStarDates;
     Location location;
-
-
-    public Galaxy getGalaxy() {
-        return galaxy;
-    }
-
-    public void setGalaxy(Galaxy galaxy) {
-        this.galaxy = galaxy;
-    }
 
     public Game(int numKlingons, int numStarbases, int numStarDates, Location location) {
 
@@ -42,6 +33,10 @@ public class Game {
         setNumStarbases(numStarbases);
         setNumStarDates(starDates);
         setLocation(location);
+    }
+
+    public Galaxy getGalaxy() {
+        return galaxy;
     }
 
     public int getNumKlingons() {
