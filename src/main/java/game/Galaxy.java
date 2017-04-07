@@ -38,6 +38,7 @@ public class Galaxy {
     public Galaxy(int l, int w) {
 
         int quadrantNumber = 1;
+        quadrants = new HashSet<Quadrant>();
         for (int i=0; i < l; i++) {
             for (int j= 0; j < w; j++) {
                 Quadrant quadrant = new Quadrant(quadrantNumber);
@@ -45,6 +46,10 @@ public class Galaxy {
                 quadrantNumber ++;
             }
         }
+    }
+
+    public int getNumQuadrantsInGalaxy() {
+        return quadrants.size();
     }
 
     public Quadrant getQuadrantByQuadrantNumber(int quadrantNumber) {
