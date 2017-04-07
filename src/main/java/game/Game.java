@@ -66,6 +66,11 @@ public class Game {
         if (location == null) {
             throw new IllegalArgumentException(" Location cannot be null");
         }
+
+        if (!galaxy.isValidLocation(location)) {
+            throw new IllegalArgumentException(" Location is not valid");
+        }
+
         this.location = location;
     }
 }
