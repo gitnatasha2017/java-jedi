@@ -7,8 +7,8 @@ import java.awt.*;
  */
 public class Location {
 
-    int quadrantNumber;
-    Point sector;
+    final int quadrantNumber;
+    final Point sector;
 
     public Location(int quadrantNumber, Point sector) {
         this.quadrantNumber = quadrantNumber;
@@ -18,16 +18,8 @@ public class Location {
         return quadrantNumber;
     }
 
-    public void setQuadrantNumber(int quadrantNumber) {
-        this.quadrantNumber = quadrantNumber;
-    }
-
     public Point getSector() {
         return sector;
-    }
-
-    public void setSector(Point p) {
-        this.sector = p;
     }
 
     @Override

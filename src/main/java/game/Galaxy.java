@@ -13,15 +13,12 @@ public class Galaxy {
         return quadrants;
     }
 
-    public void setQuadrants(Set<Quadrant> quadrants) {
-        this.quadrants = quadrants;
-    }
-
-    Set<Quadrant> quadrants;
+    final Set<Quadrant> quadrants;
 
     public static final int defaultQuadrantLength = 8;
     public static final int defaultQuadrantWidth = 8;
 
+    /* Initialize Galaxy with default length and width */
     public Galaxy() {
 
         int quadrantNumber = 1;
@@ -35,6 +32,7 @@ public class Galaxy {
         }
     }
 
+    /* Initialize Galaxy with specified length and width */
     public Galaxy(int l, int w) {
 
         int quadrantNumber = 1;
@@ -122,9 +120,7 @@ public class Galaxy {
     public int hashCode() {
 
         int hashCode = 31;
-
         hashCode = hashCode + this.quadrants.hashCode() * 31;
-
         return hashCode;
     }
 

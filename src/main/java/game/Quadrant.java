@@ -8,7 +8,7 @@ public class Quadrant {
 
     /* Quadrant identified by a quadrant number */
     int quadrantNumber;
-    Set<Point> sectors;
+    final Set<Point> sectors;
 
     public int getQuadrantNumber() {
         return quadrantNumber;
@@ -24,10 +24,6 @@ public class Quadrant {
 
     public Set<Point> getSectors() {
         return sectors;
-    }
-
-    public void setSectors(Set<Point> sectors) {
-        this.sectors = sectors;
     }
 
     public static final int defaultSectorLength = 10;
@@ -52,7 +48,6 @@ public class Quadrant {
         for (int i=0; i < l; i++) {
             for (int j= 0; j < w; j++) {
                 Point point = new Point(i,j);
-
                 sectors.add(point);
             }
         }
@@ -64,7 +59,6 @@ public class Quadrant {
         }
         return false;
     }
-
 
     @Override
     public boolean equals(Object o) {
