@@ -14,15 +14,18 @@ public class Game {
     Location location;
 
 
-    public Game(int numKlingons, int numStarbases, int starDates, Location location) {
+    public Game(int numKlingons, int numStarbases, int numStarDates, Location location) {
 
         this.galaxy = new Galaxy();
+
+        if (numKlingons <= 0 || numStarbases <= 0 || numStarDates <= 0) {
+            throw new IllegalArgumentException("Invalid number of Klingtons, star bases or stardates");
+        }
         setNumKlingons(numKlingons);
         setNumStarbases(numStarbases);
-        setNumStarDates(starDates);
+        setNumStarDates(numStarDates);
         setLocation(location);
     }
-
 
     public Game(Galaxy galaxy, int numKlingons, int numStarbases, int starDates, Location location) {
 
